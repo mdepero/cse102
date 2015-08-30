@@ -1,0 +1,96 @@
+/*Stylesheet for CSE102 Website
+ *
+ *All Code by Matt DePero
+ *
+ */
+html{
+	position: relative;
+}
+body{
+	text-align:center;
+	background-color:#99CCFF;
+	padding-bottom:200px;
+	font-family: 'Open Sans', sans-serif;
+}
+table{
+	border-collapse: collapse;
+}
+table.layout{
+	width: 100%;
+}
+table.bordered td{
+	border: 1px solid black;
+	padding:4px;
+}
+table.centered-cells td{
+	text-align: center;
+}
+th{
+	text-align: center;
+}
+td.warning{
+	background-color: #fcc;
+}
+td.success{
+	background-color: #cfc;
+}
+.content{
+	width:100%;
+	max-width:900px;
+	margin: auto;
+	text-align:left;
+
+	display:inline-block;
+	
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+
+	background-color:#fff;
+	padding:20px;
+	border: 1px solid black;
+}
+.content p{
+	padding-left: 15px;
+}
+.links{
+	list-style-type: none;
+}
+.links a{
+	display: block;
+	padding: 5px 8px;
+	color: inherit;
+}
+.lab-links a{
+	display: inline-block;
+}
+.links li{
+	padding:0px 20px;
+	color:black;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.links li:hover{
+	background-color:#99CCFF;
+	color:#006;
+}
+.back-arrow{
+	height:40px;
+	position: fixed;
+	top:5px;
+	left:5px;
+}
+
+.countingTable{
+	width:100%;
+	border-collapse: collapse;
+}
+.countingTable td{
+	text-align:center;
+	padding:4px 2px;
+	border:1px solid black;
+}
+.countingTable thead td{
+	font-weight: bold;
+}

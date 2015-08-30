@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Homework 4 | CSE102 | Matt DePero</title>
+		<link rel="stylesheet" href="../../styles.css">
+	</head>
+	<body>
+		<a href="../"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" alt="back" class="back-arrow"></a>
+		<h1>CSE102 | Matt DePero</h1>
+		<h2>Homework 4</h2>
+		<div class="content">
+			<h3>Creating A Bitmap File with a Hex Editor</h3>
+			<p>The video below demonstrates how to make a bitmap image file using only hex values. This shows how all forms of data are at their root simply binary strings of 1's and 0's formatted in a creative way to make them understandable by computers.
+			</p>
+
+			<p>Sources used include the <a href="http://en.wikipedia.org/wiki/BMP_file_format" target="_BLANK">BMP file format Wikipedia article</a> and also the <a href="https://apps.ubuntu.com/cat/applications/bless/" target="_BLANK">Bless Hex Editor</a>.
+			</p>
+
+			<p>The video is also presented in HTML5 rather than with YouTube as HTML5 is easier to implement, let's me customize how the video is presented better, streams faster and in higher quality, and lets me include <a href="matt_depero_hex-to-bmp.mp4">the video</a> directly on the server.
+			</p>
+
+			<script type="text/javascript">
+				function togglePlay(video){
+					if (video.paused) 
+					    video.play(); 
+					else 
+					    video.pause(); 
+				}
+			</script>
+
+			<video width="100%" controls onclick="togglePlay(this);">
+			  <source src="matt_depero_hex-to-bmp.mp4" type="video/mp4">
+			Your browser does not support the video tag. Please use a modern browser that isn't Internet Explorer
+			</video>
+		</div>
+	</body>
+</html>

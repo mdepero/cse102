@@ -1,0 +1,41 @@
+/**
+ *Stylesheet for Lab 3
+ *
+ *All Code by Matt DePero
+ */
+.topic h3{
+	color: red;
+}
+.topic{
+	border:1px solid black;
+	padding: 15px;
+	background-color: white;
+
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+.topic:hover{
+	background-color: #ccc;
+}
+ul{
+	list-style:none;
+}
+
+#wrap{
+	width:100%;
+	max-width:800px;
+	margin: 30px auto;
+}
+#sidebar{
+	float: right;
+	width:250px;
+	margin-top: 50px;
+}
+#content{
+	float: left;
+	width: 500px;
+}
+#footer{
+	clear:both;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Binary | Homework 1 | Matt DePero | CSE102</title>
+		<link rel="stylesheet" href="../../styles.css">
+
+		<script type="text/javascript">
+			/*Counting Table Row Generator
+			 *
+			 *All Code by Matt DePero
+			 */
+			function addRowToTable(){
+				var base = document.getElementById('baseNum').value;
+				if(!isNaN(base)&&base>0){
+					base = Math.floor(base);
+					var table = document.getElementById('countingTable');
+					//Create Element
+					var row = table.insertRow();
+					var colIndex = 0;
+					row.insertCell(colIndex++).innerHTML = "<b>Base: "+base+"</b>";
+					for(var i=0;i<=32;i++){
+						row.insertCell(colIndex++).innerHTML = i.toString(base);
+					}
+				}
+				document.getElementById('baseNum').value = "";
+				
+				return false;
+			}
+		</script>
+
+	</head>
+	<body>
+		<a href="./"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" alt="back" class="back-arrow"></a>
+		<h1>Matt DePero | CSE102</h1>
+		<h2>Binary  (Homework 1)</h2>
+		<div class="content" style="max-width:none;width:inherit;">
+			<h3>Counting in Various Number Systems: </h3>
+			<p>
+				Below is the table required for the homework.
+			</p>
+			<p>
+				Use the form and button to generate more rows (use a number for the base, should work for any base >1).
+			</p>
+			Base: <form onsubmit="return addRowToTable();"><input type="number" style="width:80px;" id="baseNum"><button type="button" onclick="javascript:addRowToTable();">Add Row</button></form><br><br><br>
+			<table class="countingTable" id="countingTable">
+				<thead>
+					<tr>
+						<td>Decimal</td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>20</td>
+						<td>21</td>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+						<td>25</td>
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+						<td>29</td>
+						<td>30</td>
+						<td>31</td>
+						<td>32</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><b>Binary</b></td>
+						<td>0</td>
+						<td>1</td>
+						<td>10</td>
+						<td>11</td>
+						<td>100</td>
+						<td>101</td>
+						<td>110</td>
+						<td>111</td>
+						<td>1000</td>
+						<td>1001</td>
+						<td>1010</td>
+						<td>1011</td>
+						<td>1100</td>
+						<td>1101</td>
+						<td>1110</td>
+						<td>1111</td>
+						<td>10000</td>
+						<td>10001</td>
+						<td>10010</td>
+						<td>10011</td>
+						<td>10100</td>
+						<td>10101</td>
+						<td>10110</td>
+						<td>10111</td>
+						<td>11000</td>
+						<td>11001</td>
+						<td>11010</td>
+						<td>11011</td>
+						<td>11100</td>
+						<td>11101</td>
+						<td>11110</td>
+						<td>11111</td>
+						<td>100000</td>
+					</tr>
+					<tr>
+						<td><b>Hex</b></td>
+						<td>0</td>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+						<td>5</td>
+						<td>6</td>
+						<td>7</td>
+						<td>8</td>
+						<td>9</td>
+						<td>a</td>
+						<td>b</td>
+						<td>c</td>
+						<td>d</td>
+						<td>e</td>
+						<td>f</td>
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+						<td>13</td>
+						<td>14</td>
+						<td>15</td>
+						<td>16</td>
+						<td>17</td>
+						<td>18</td>
+						<td>19</td>
+						<td>1a</td>
+						<td>1b</td>
+						<td>1c</td>
+						<td>1d</td>
+						<td>1e</td>
+						<td>1f</td>
+						<td>20</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+/*
+ *Style sheet for Stylesheets Lab (recipies)
+ *
+ *All Code by Matt DePero
+ */
+#recipe{
+	border: 3px solid green;
+	background-color: #DFD;
+	padding: 25px;
+
+	/*margin set to mask effects of original content div*/
+	margin: -21px;
+
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+#recipe h1, #recipe h2{
+	font-family: "Times New Roman", Times, serif;
+	color: #050;
+}
+
+#recipe ul{
+	list-style: none;
+}
+
+#ingredients ul{
+	list-style: square;
+}
+
+#recipe div{
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding: 5px 10px;
+}
+
+#head:hover{
+	background-color: white;
+}
+#ingredients:hover{
+	background-color:#99CCFF;
+}
+#accompaniments:hover{
+	background-color:#FFA3A3;
+}
+#directions:hover{
+	background-color:#DB94FF;
+}
+#notes:hover{
+	background-color:#FFC285;
+}

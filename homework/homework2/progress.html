@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Progress | Homework 1 | CSE102 | Matt DePero</title>
+		<link rel="stylesheet" href="../../styles.css">
+	</head>
+	<body>
+		<a href="./"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" alt="back" class="back-arrow"></a>
+		<h1>CSE102 | Matt DePero</h1>
+		<h2>Progress (Homework 2)</h2>
+		<div class="content">
+			<h3>Progress We've Made With Data Storage and Transfer</h3>
+				<h4>Initial Values</h4>
+					<p>
+						According to the <a href="http://en.wikipedia.org/wiki/Blu-ray_Disc">blu-ray discs</a> wikipedia article, a standard Blu-Ray Disc contains two 25GB layers for a total of 50GB.
+					</p>
+					<p>
+						According to the <a href="http://en.wikipedia.org/wiki/Bell_103_modem">Bell 103 Modem</a> wikipedia article (which includes the 300-Baud modem), a typical bit rate would be 300 bit/s.
+					</p>
+				<h4>Conversion</h4>
+					<p>
+						The easiest way to divide 50GB by 300 bits/second is get 50 Gigabytes in terms of just bits. A bit is a single 1 or 0 in a computer. A byte consists of 8 of these bits. 
+					</p>
+					<p>
+						A gigabyte is approximately  1,000,000,000 (or 10<sup>9</sup>) bytes, however this is not exact. Although giga means 10<sup>9</sup>, this is only an approximation of the number of bytes due to the way numbers work in computers. 
+					</p>
+					<p>
+						Instead we much look at it in the sense that a kilobyte (kilo normally meaning 1000) is actually 2<sup>10</sup> which equals <b>1024</b> bytes and then go from there. 
+					</p>
+					<p>
+						<b>8</b> bits/byte X <b>1024</b> bytes/kilobytes X <b>1000</b> kilobytes/megabyte X <b>1000</b> gigabytes/megabyte x <b>50</b> gigabytes = <i><b>429,496,729,600 bits</b></i> This is the total number of bits we are working with for the blu-ray disc.
+					</p>
+				<h4>Download Time Calculations</h4>
+					<div style="text-align:center;">
+						<img src="http://upload.wikimedia.org/wikipedia/commons/7/7a/Modem-usr-courier-v34-front-online.jpg" alt="old modem" style="height:100px;">
+						<br>
+						Image from <a href="http://www.wikimedia.org">Wikimedia</a>
+					</div>
+					<p>
+						<b>429,496,729,600</b> bits / <b>300</b> bits/second = <b>1,431,655,765.33</b> seconds 
+					</p>
+					<p>
+						Using <a href="http://google.com">Google.com</a> as a converter, We can eventually get a time of approximately <b><i> 45 years, 134 days, 4 hours, 33 minutes, and 40 seconds</i></b>.
+					</p>
+				<h4>Floppy Disk Calculations</h4>
+				<div style="text-align:center;">
+						<img src="http://upload.wikimedia.org/wikipedia/commons/3/3b/Dysan_floppy_disk_01.jpg" alt="old floppy disk" style="height:100px;">
+						<br>
+						Image from <a href="http://www.wikipedia.org">Wikipeida</a>
+					</div>
+					<p>
+						A floppy disk was one of the earliest forms of data storage. According to <a href="http://en.wikipedia.org/wiki/Floppy_disk">Wikipedia</a>, the most common 3½ inch floppy disk format was the double-sided, high density disk capable of storing 1.44 Megabytes of data.
+					</p>
+					<p>
+						Using the same calculation methods as above: <b>8</b> bits/byte X <b>1024</b> bytes/kilobytes X <b>1000</b> kilobytes/megabyte X <b>1.44</b> megabytes = <b><i>11,796,480 bits</i></b> on a common floppy drive.
+					</p>
+					<p>
+						Using the same value of a Blu-Ray disc: <b>429,496,729,600</b> bits/BR disk / <b>11,796,480</b> bits/Floppy Drive = <i><b>36,409</b></i> floppy disks per BR disc.
+					</p>
+
+		</div>
+	</body>
+</html>

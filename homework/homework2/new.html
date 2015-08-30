@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>New | Homework 1 | CSE102 | Matt DePero</title>
+		<link rel="stylesheet" href="../../styles.css">
+	</head>
+	<body>
+		<a href="./"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Back_Arrow.svg/240px-Back_Arrow.svg.png" alt="back" class="back-arrow"></a>
+		<h1>CSE102 | Matt DePero</h1>
+		<h2>New (Homework 2)</h2>
+		<div class="content">
+			<h3>New Stuff I've Learned In HTML</h3>
+			<h4>Canvas Element</h4>
+			<script type="text/javascript">
+			/*Canvas Control Javascript
+			 *
+			 *All Code by Matt DePero
+			 *
+			 */
+			 	var rotate = 0;
+				window.onload = function(){
+					var fps = 50;
+					var timer = setInterval(run,1000/fps);
+				}
+				function run(){
+					var ctx=document.getElementById("myCanvas").getContext("2d");
+					ctx.fillStyle="#FFF";
+					ctx.fillRect(0,0,400,300);
+					ctx.fillStyle="#00F";
+					ctx.beginPath();
+					ctx.arc((Math.cos(rotate)*70)+200, (Math.sin(rotate)*70)+150, 50, 0, 2 * Math.PI, false);
+					ctx.fill();
+					rotate += .05;
+				}
+			</script>
+			<p>
+				<canvas id="myCanvas" width="400px" height="300px" style="border:1px solid #00F;">Your browser does not support the canvas element</canvas>
+			</p>
+			<p>
+				While it isn't 100% plain HTML, the canvas element is still an interesting part of html5, although it does need to be controled by javascript once it's made.
+			</p>
+			<p>
+				<a href="http://www.w3schools.com/html/html5_canvas.asp">See w3schools Canvas Tutorial</a>
+			</p>
+
+			<h4>Built In Date Input</h4>
+			<p>
+				<input type="date">
+			</p>
+			<p>
+				Another cool element in HTML is the Date input. While it isn't very browser compatible (especially with old Internet Explorer) it is a very powerful way to accept dates without even having to write more than one line of code.
+			</p>
+			<p>
+				<a href="http://www.w3schools.com/html/html_form_input_types.asp">See w3school Inputs Tutorial</a>
+			</p>
+			<h4>iFrames</h4>
+			<p>
+				<iframe src="http://www.users.miamioh.edu/deperomm/cse102/" width="400px" height="300px"></iframe>
+				<br>Displaying <a href="http://www.users.miamioh.edu/deperomm/cse102/">Matt DePero's CSE102 Home Page</a>
+			</p>
+			<p>
+				iFrames are a tool that allow you to create a sort of mini browser inside of your website. They can also be used to recieve form data from the web page without having to actually leave the page itself which can be very useful because the user can see the results of sending form data without ever leaving the page.
+			</p>
+			<p>
+				<a href="http://www.w3schools.com/html/html_iframe.asp">See w3schools iFrame Tutorial</a>
+			</p>
+		</div>
+	</body>
+</html>
